@@ -1,0 +1,1 @@
+const API = {KEY:'add your api key in here'};

@@ -1,24 +1,10 @@
+const API_KEY = API.KEY
+console.log(API_KEY)
 
-
-
-
-let pageCount = 1
-const nextBtn = document.querySelector('[nextBtn]'),
-      prevBtn = document.querySelector('[prevBtn]')
-nextBtn.addEventListener('click',nextPage)
-// prevBtn.addEventListener('click',prevPage)
-
-function nextPage(){
-pageCount++
-  return 
-}
-console.log(pageCount)
-
-let API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page='+pageCount
+let API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=1`
 
 IMG_PATH = 'https://image.tmdb.org/t/p/w1280' 
-
-
+console.log(API_URL)
 
 const template = document.querySelector('[data-template]')
 const cardContainer = document.querySelector('.card-template')

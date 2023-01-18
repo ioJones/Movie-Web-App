@@ -9,6 +9,10 @@
     font-family: 'Josefin Sans', sans-serif;
    
   }
+header{
+  background-color: cadetblue;
+}
+
  .card-template{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
